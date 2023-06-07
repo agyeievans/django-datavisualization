@@ -9,9 +9,11 @@
             <h4>Add data</h4>
             <hr>
 
-            <form action method="post">
+            <form method="post">
                 {% csrf_token %}
+                {{ form }}
 
+                <input class="btn btn-success btn-block" type="submit" value="Add">
             </form>
         </div>
     </div>
