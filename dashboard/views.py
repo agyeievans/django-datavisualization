@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import CountryData
 from .forms import CountryDataForm
 
@@ -9,6 +9,7 @@ def index(request):
         form = CountryDataForm(request.POST)
         if form.is_valid():
             form.save()
+            return redirect('/')
     else:
         form = CountryDataForm()
     context = {

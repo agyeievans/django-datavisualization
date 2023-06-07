@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # 'crispy_forms',
+    # 'crispy_bootstrap4',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -100,6 +102,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+
+# CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
